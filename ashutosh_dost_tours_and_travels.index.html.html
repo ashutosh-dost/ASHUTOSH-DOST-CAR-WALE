@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ashutosh Dost Tours and Travels — reliable travel and taxi services in Mau, available 24×7. Call 8881312128.">
+  <title>Ashutosh Dost Tours and Travels | Mau</title>
+  <style>
+    :root{--navy:#102a43;--blue:#1769aa;--saffron:#f59e0b;--pale:#f3f8fc;--ink:#183047}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    a{text-decoration:none}
+    .topbar{background:var(--navy);color:#fff;text-align:center;padding:9px 14px;font-size:14px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px max(5%, calc((100% - 1120px)/2));background:#fff}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy);font-size:18px;line-height:1.2}
+    .logo{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--navy));color:#fff;display:grid;place-items:center;font-size:26px}
+    nav{display:flex;gap:22px;align-items:center;font-size:14px;font-weight:700}
+    nav a{color:var(--ink)}
+    .call{background:var(--saffron);color:#182b3b!important;padding:12px 18px;border-radius:999px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 7px 18px #f59e0b35}
+    .hero{background:radial-gradient(circle at 80% 20%,#2d82bc 0,#1769aa 24%,#102a43 68%);color:#fff;padding:76px max(5%, calc((100% - 1120px)/2)) 84px;overflow:hidden;position:relative}
+    .hero:after{content:"";position:absolute;width:390px;height:390px;border:1px solid #ffffff30;border-radius:50%;right:-95px;top:-100px;box-shadow:0 0 0 38px #ffffff08,0 0 0 78px #ffffff08}
+    .hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center;position:relative;z-index:1}
+    .eyebrow{color:#ffd58a;font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:13px}
+    h1{font-size:clamp(36px,5vw,58px);line-height:1.08;margin:15px 0 20px;letter-spacing:-1px}
+    .hero p{font-size:18px;color:#e4eff8;max-width:580px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+    .secondary{border:1px solid #ffffff75;color:#fff;padding:12px 18px;border-radius:999px;font-weight:700}
+    .visual{min-height:300px;display:grid;place-items:center}
+    .car-card{width:min(100%,390px);padding:28px;border-radius:28px;background:linear-gradient(145deg,#ffffff20,#ffffff09);border:1px solid #ffffff35;backdrop-filter:blur(4px);text-align:center}
+    .car{font-size:100px;line-height:1.2;filter:drop-shadow(0 12px 12px #0004)}
+    .road{height:5px;background:#ffffff85;border-radius:10px;margin:10px auto 20px;width:85%}
+    .car-card strong{font-size:21px;display:block}
+    .car-card span{color:#d9eaf7;font-size:14px}
+    section{padding:68px 5%}
+    .container{max-width:1120px;margin:auto}
+    .section-head{text-align:center;max-width:700px;margin:0 auto 36px}
+    .section-head h2{font-size:clamp(28px,3.5vw,38px);margin:0 0 10px;color:var(--navy)}
+    .section-head p{margin:0;color:#60758a}
+    .services{background:var(--pale)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{background:#fff;padding:25px;border-radius:18px;border:1px solid #e4edf5;box-shadow:0 8px 25px #17324d08}
+    .service .ico{width:52px;height:52px;border-radius:15px;background:#e8f3fc;display:grid;place-items:center;font-size:26px;margin-bottom:15px}
+    .service h3{margin:0 0 7px;color:var(--navy);font-size:19px}
+    .service p{margin:0;color:#62768a;font-size:14px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .about-panel{background:linear-gradient(145deg,#eaf5fd,#fff7e8);border-radius:24px;padding:32px}
+    .about-panel .big{font-size:52px}
+    .about-panel h3{margin:8px 0;color:var(--navy);font-size:24px}
+    .checks{padding:0;list-style:none}
+    .checks li{margin:12px 0;font-weight:600}
+    .checks li:before{content:"✓";display:inline-grid;place-items:center;background:#dff6e8;color:#137a43;width:25px;height:25px;border-radius:50%;margin-right:10px}
+    .contact{background:var(--navy);color:#fff;text-align:center}
+    .contact h2{font-size:clamp(28px,4vw,40px);margin:0 0 12px}
+    .contact p{color:#d7e5f1}
+    .contact-number{font-size:clamp(28px,5vw,42px);font-weight:900;letter-spacing:1px;margin:22px 0}
+    .contact .call{font-size:17px}
+    footer{background:#0a1b2b;color:#b9c9d7;padding:22px 5%;text-align:center;font-size:13px}
+    .float-call{display:none}
+    @media(max-width:760px){
+      header{padding:14px 5%}nav{display:none}.brand{font-size:15px}.logo{width:42px;height:42px}
+      .hero{padding-top:55px;padding-bottom:55px}.hero-inner{grid-template-columns:1fr;gap:20px}.visual{min-height:auto}.car-card{padding:20px}.car{font-size:75px}
+      .grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.about-panel{padding:25px}
+      section{padding:52px 5%}.float-call{display:flex;position:fixed;bottom:14px;left:5%;right:5%;z-index:10}
+      footer{padding-bottom:85px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">🚖 24×7 Travel Service • Munsipura Overbridge Ke Niche, Mau</div>
+  <header>
+    <a class="brand" href="#home" aria-label="Ashutosh Dost Tours and Travels home">
+      <span class="logo">🚖</span>
+      <span>ASHUTOSH DOST<br>TOURS AND TRAVELS</span>
+    </a>
+    <nav>
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+      <a class="call" href="tel:8881312128">☎ Call Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Your journey, our priority</div>
+          <h1>Travel with comfort.<br>Arrive with a smile.</h1>
+          <p>Looking for a reliable travel service near Munsipura Overbridge, Mau? Contact <strong>Ashutosh Dost Tours and Travels</strong> for your next journey. We’re available 24×7 to help with your travel plans.</p>
+          <div class="hero-actions">
+            <a class="call" href="tel:8881312128">☎ Call 8881312128</a>
+            <a class="secondary" href="#services">Explore Services ↓</a>
+          </div>
+        </div>
+        <div class="visual">
+          <div class="car-card">
+            <div class="car" aria-hidden="true">🚙</div>
+            <div class="road"></div>
+            <strong>Ready for your next trip?</strong>
+            <span>Local • Outstation • Family Travel</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Travel Services</h2>
+          <p>Tell us where you need to go. Call us to discuss your route, timing and travel requirements.</p>
+        </div>
+        <div class="grid">
+          <article class="service"><div class="ico">📍</div><h3>Local Travel</h3><p>Travel from Munsipura Overbridge, Mau and nearby locations with a plan that suits your needs.</p></article>
+          <article class="service"><div class="ico">🛣️</div><h3>Outstation Trips</h3><p>Plan a journey to another city for work, visits or a family trip.</p></article>
+          <article class="service"><div class="ico">🚉</div><h3>Railway Station Pickup</h3><p>Arrange travel to or from the railway station by calling in advance.</p></article>
+          <article class="service"><div class="ico">✈️</div><h3>Airport Transfers</h3><p>Discuss airport drop-off and pickup requirements with our team.</p></article>
+          <article class="service"><div class="ico">👨‍👩‍👧</div><h3>Family Travel</h3><p>Get in touch to plan convenient travel for family outings and visits.</p></article>
+          <article class="service"><div class="ico">🕒</div><h3>24×7 Availability</h3><p>Call any time to check service availability and confirm your booking.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div>
+          <div class="eyebrow" style="color:#1769aa">Why contact us?</div>
+          <h2 style="font-size:clamp(28px,3.5vw,38px);line-height:1.2;color:#102a43">A helpful travel partner in Mau</h2>
+          <p>At Ashutosh Dost Tours and Travels, we aim to make planning your journey simple. Call us to discuss your destination, pickup point, schedule and fare before confirming your trip.</p>
+          <ul class="checks">
+            <li>Phone support: 8881312128</li>
+            <li>Available 24×7 for enquiries</li>
+            <li>Discuss your trip before booking</li>
+          </ul>
+        </div>
+        <div class="about-panel">
+          <div class="big">📞</div>
+          <h3>Need a ride?</h3>
+          <p>Call us directly to check availability and make your travel plan.</p>
+          <a class="call" href="tel:8881312128">Call 8881312128</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Let’s plan your next journey</h2>
+        <p>Ashutosh Dost Tours and Travels • Munsipura Overbridge Ke Niche, Munsipura Overbridge Ke Niche, Mau, Uttar Pradesh</p>
+        <div class="contact-number">8881312128</div>
+        <p>Open for enquiries 24 hours a day, 7 days a week</p>
+        <a class="call" href="tel:8881312128">☎ Call Now</a>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year">2026</span> Ashutosh Dost Tours and Travels. All rights reserved.</footer>
+  <a class="call float-call" href="tel:8881312128">☎ Call Ashutosh Dost Tours and Travels — 8881312128</a>
+</body>
+</html>
